@@ -1,0 +1,82 @@
+{
+  "method": "mr_plain",
+  "attempt": 1,
+  "label": "mr_plain_1",
+  "wall_s": 10.975395799999887,
+  "peak_tree_rss_mib": 222.6875,
+  "cpu_s_sampled": 8.5,
+  "rss_samples": 404,
+  "server_samples": [
+    {
+      "elapsed_s": 1.179807700000083,
+      "stats": {
+        "BlockIO": "105MB / 12.3kB",
+        "CPUPerc": "0.02%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "1.48%",
+        "MemUsage": "117MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "13.3kB / 3.2kB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 3.3437552000000323,
+      "stats": {
+        "BlockIO": "110MB / 12.3kB",
+        "CPUPerc": "1.21%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "1.70%",
+        "MemUsage": "133.7MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "14.3kB / 3.34kB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 5.50386309999999,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "2.77%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.03%",
+        "MemUsage": "159.8MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "26.2kB / 19.6MB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 8.517449700000043,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "4.65%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.11%",
+        "MemUsage": "166.1MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "42kB / 46.8MB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 10.688416899999993,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "0.01%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.10%",
+        "MemUsage": "165.6MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "46.9kB / 54.3MB",
+        "PIDs": "38"
+      }
+    }
+  ],
+  "exit_code": 0
+}

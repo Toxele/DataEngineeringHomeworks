@@ -1,0 +1,13 @@
+{
+  "bucket": "hh-lake",
+  "key": "hw3/input/it_vacancies_2024.csv",
+  "bytes": 847619384,
+  "sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+  "s3_sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+  "head": {
+    "LastModified": "2026-10-20 23:57:05+00:00",
+    "ContentLength": "847619384",
+    "ETag": "\"5d93ef0c42e6ce7b734cc44a89c4f228-102\"",
+    "Metadata": "{'sha256': '303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65'}"
+  }
+}

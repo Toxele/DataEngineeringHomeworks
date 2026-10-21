@@ -1,0 +1,221 @@
+{
+  "all_equal": true,
+  "checks": [
+    {
+      "run": "duckdb_1",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "duckdb_1",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "duckdb_1",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "duckdb_2",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "duckdb_2",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "duckdb_2",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "duckdb_3",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "duckdb_3",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "duckdb_3",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_1",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_1",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_1",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_2",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_2",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_2",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_3",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_3",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_combiner_3",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_1",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_1",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_1",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_2",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_2",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_2",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_3",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_3",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_plain_3",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    },
+    {
+      "run": "mr_retry_1",
+      "stack_size": 1,
+      "keys": 2233,
+      "occurrences": 67914,
+      "equal": true
+    },
+    {
+      "run": "mr_retry_1",
+      "stack_size": 2,
+      "keys": 30809,
+      "occurrences": 231685,
+      "equal": true
+    },
+    {
+      "run": "mr_retry_1",
+      "stack_size": 3,
+      "keys": 198197,
+      "occurrences": 699418,
+      "equal": true
+    }
+  ],
+  "vacancy_level_equal": true,
+  "expected_emissions": {
+    "1": 67914,
+    "2": 231685,
+    "3": 699418
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "method": "mr_combiner",
+  "attempt": 1,
+  "label": "mr_combiner_1",
+  "wall_s": 7.150809700000082,
+  "peak_tree_rss_mib": 222.2734375,
+  "cpu_s_sampled": 8.96875,
+  "rss_samples": 253,
+  "server_samples": [
+    {
+      "elapsed_s": 1.7146854000000076,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "2.03%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.10%",
+        "MemUsage": "166MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "47.8kB / 54.3MB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 3.890941699999985,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "8.83%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.52%",
+        "MemUsage": "199.1MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "70.9kB / 84.5MB",
+        "PIDs": "38"
+      }
+    },
+    {
+      "elapsed_s": 6.901130499999908,
+      "stats": {
+        "BlockIO": "111MB / 12.3kB",
+        "CPUPerc": "0.70%",
+        "Container": "rustfs-lab",
+        "ID": "d196d5d3a5c7",
+        "MemPerc": "2.54%",
+        "MemUsage": "200.6MiB / 7.704GiB",
+        "Name": "rustfs-lab",
+        "NetIO": "89.3kB / 109MB",
+        "PIDs": "38"
+      }
+    }
+  ],
+  "exit_code": 0
+}

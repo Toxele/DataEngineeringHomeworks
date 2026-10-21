@@ -1,0 +1,9 @@
+test_combiner_and_failure (test_pipeline.PolicyTests.test_combiner_and_failure) ... ok
+test_salary_policy (test_pipeline.PolicyTests.test_salary_policy) ... ok
+test_segment (test_pipeline.PolicyTests.test_segment) ... ok
+test_skills_are_a_set (test_pipeline.PolicyTests.test_skills_are_a_set) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

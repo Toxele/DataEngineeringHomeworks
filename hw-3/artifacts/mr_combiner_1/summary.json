@@ -1,0 +1,19 @@
+{
+  "input_rows": 229388,
+  "selected_rows": 18698,
+  "with_skills": 12284,
+  "salary_rows": 7922,
+  "unique": {
+    "1": 2233,
+    "2": 30809,
+    "3": 198197
+  },
+  "emitted": {
+    "1": 67914,
+    "2": 231685,
+    "3": 699418
+  },
+  "chunk_size": 2000,
+  "workers": 2,
+  "attempts": []
+}

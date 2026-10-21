@@ -1,0 +1,916 @@
+{
+  "min_salary_support": 30,
+  "regions": [
+    {
+      "region": "Москва",
+      "vacancies": 5206,
+      "with_skills": 3429,
+      "salary_n": 1880,
+      "salary_coverage_pct": 36.11217825585862,
+      "median_rub": 200000.0,
+      "with_stack_1": 3429,
+      "with_stack_2": 3147,
+      "with_stack_3": 2835,
+      "combinations_1": 19811,
+      "combinations_2": 73772,
+      "combinations_3": 251921
+    },
+    {
+      "region": "Санкт-Петербург",
+      "vacancies": 1690,
+      "with_skills": 1151,
+      "salary_n": 718,
+      "salary_coverage_pct": 42.485207100591715,
+      "median_rub": 170000.0,
+      "with_stack_1": 1151,
+      "with_stack_2": 1051,
+      "with_stack_3": 961,
+      "combinations_1": 6264,
+      "combinations_2": 20706,
+      "combinations_3": 58599
+    },
+    {
+      "region": "Екатеринбург",
+      "vacancies": 875,
+      "with_skills": 591,
+      "salary_n": 503,
+      "salary_coverage_pct": 57.48571428571429,
+      "median_rub": 150000.0,
+      "with_stack_1": 591,
+      "with_stack_2": 545,
+      "with_stack_3": 491,
+      "combinations_1": 3153,
+      "combinations_2": 10102,
+      "combinations_3": 29674
+    }
+  ],
+  "region_stacks": [
+    {
+      "region": "Москва",
+      "stack_size": 1,
+      "skills": "1с программирование",
+      "frequency": 2482,
+      "vacancy_share_pct": 47.67575873991548
+    },
+    {
+      "region": "Москва",
+      "stack_size": 1,
+      "skills": "1с: предприятие 8",
+      "frequency": 1245,
+      "vacancy_share_pct": 23.914713791778716
+    },
+    {
+      "region": "Москва",
+      "stack_size": 1,
+      "skills": "1с: бухгалтерия",
+      "frequency": 957,
+      "vacancy_share_pct": 18.38263542066846
+    },
+    {
+      "region": "Москва",
+      "stack_size": 1,
+      "skills": "1с: управление торговлей",
+      "frequency": 781,
+      "vacancy_share_pct": 15.001920860545525
+    },
+    {
+      "region": "Москва",
+      "stack_size": 1,
+      "skills": "erp-системы на базе 1с",
+      "frequency": 741,
+      "vacancy_share_pct": 14.233576642335766
+    },
+    {
+      "region": "Москва",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: предприятие 8",
+      "frequency": 1038,
+      "vacancy_share_pct": 19.93853246254322
+    },
+    {
+      "region": "Москва",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: бухгалтерия",
+      "frequency": 759,
+      "vacancy_share_pct": 14.579331540530157
+    },
+    {
+      "region": "Москва",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: управление торговлей",
+      "frequency": 627,
+      "vacancy_share_pct": 12.043795620437956
+    },
+    {
+      "region": "Москва",
+      "stack_size": 2,
+      "skills": "1с программирование + erp-системы на базе 1с",
+      "frequency": 605,
+      "vacancy_share_pct": 11.621206300422589
+    },
+    {
+      "region": "Москва",
+      "stack_size": 2,
+      "skills": "1с программирование + обновление конфигурации 1с",
+      "frequency": 530,
+      "vacancy_share_pct": 10.180560891279294
+    },
+    {
+      "region": "Москва",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: предприятие 8",
+      "frequency": 384,
+      "vacancy_share_pct": 7.376104494813677
+    },
+    {
+      "region": "Москва",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + 1с: управление торговлей",
+      "frequency": 352,
+      "vacancy_share_pct": 6.76142912024587
+    },
+    {
+      "region": "Москва",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: управление торговлей",
+      "frequency": 281,
+      "vacancy_share_pct": 5.39761813292355
+    },
+    {
+      "region": "Москва",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: документооборот + 1с: предприятие 8",
+      "frequency": 279,
+      "vacancy_share_pct": 5.359200922013062
+    },
+    {
+      "region": "Москва",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + erp-системы на базе 1с",
+      "frequency": 278,
+      "vacancy_share_pct": 5.339992316557818
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 1,
+      "skills": "1с программирование",
+      "frequency": 927,
+      "vacancy_share_pct": 54.85207100591716
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 1,
+      "skills": "1с: предприятие 8",
+      "frequency": 433,
+      "vacancy_share_pct": 25.62130177514793
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 1,
+      "skills": "1с: бухгалтерия",
+      "frequency": 308,
+      "vacancy_share_pct": 18.224852071005916
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 1,
+      "skills": "1с: управление торговлей",
+      "frequency": 259,
+      "vacancy_share_pct": 15.325443786982248
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 1,
+      "skills": "обновление конфигурации 1с",
+      "frequency": 237,
+      "vacancy_share_pct": 14.023668639053254
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: предприятие 8",
+      "frequency": 379,
+      "vacancy_share_pct": 22.42603550295858
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: бухгалтерия",
+      "frequency": 251,
+      "vacancy_share_pct": 14.85207100591716
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: управление торговлей",
+      "frequency": 219,
+      "vacancy_share_pct": 12.958579881656805
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 2,
+      "skills": "1с программирование + обновление конфигурации 1с",
+      "frequency": 212,
+      "vacancy_share_pct": 12.544378698224852
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 2,
+      "skills": "1с программирование + erp-системы на базе 1с",
+      "frequency": 190,
+      "vacancy_share_pct": 11.242603550295858
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: предприятие 8",
+      "frequency": 133,
+      "vacancy_share_pct": 7.8698224852071
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + 1с: управление торговлей",
+      "frequency": 124,
+      "vacancy_share_pct": 7.337278106508876
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + обновление конфигурации 1с",
+      "frequency": 113,
+      "vacancy_share_pct": 6.686390532544379
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: управление торговлей",
+      "frequency": 105,
+      "vacancy_share_pct": 6.21301775147929
+    },
+    {
+      "region": "Санкт-Петербург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: зарплата и управление персоналом",
+      "frequency": 97,
+      "vacancy_share_pct": 5.739644970414201
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 1,
+      "skills": "1с программирование",
+      "frequency": 506,
+      "vacancy_share_pct": 57.82857142857143
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 1,
+      "skills": "1с: предприятие 8",
+      "frequency": 230,
+      "vacancy_share_pct": 26.285714285714285
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 1,
+      "skills": "1с: бухгалтерия",
+      "frequency": 177,
+      "vacancy_share_pct": 20.228571428571428
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 1,
+      "skills": "обновление конфигурации 1с",
+      "frequency": 124,
+      "vacancy_share_pct": 14.17142857142857
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 1,
+      "skills": "1с: управление торговлей",
+      "frequency": 123,
+      "vacancy_share_pct": 14.057142857142857
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: предприятие 8",
+      "frequency": 209,
+      "vacancy_share_pct": 23.885714285714286
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: бухгалтерия",
+      "frequency": 156,
+      "vacancy_share_pct": 17.82857142857143
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 2,
+      "skills": "1с программирование + обновление конфигурации 1с",
+      "frequency": 114,
+      "vacancy_share_pct": 13.028571428571428
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 2,
+      "skills": "1с программирование + 1с: управление торговлей",
+      "frequency": 104,
+      "vacancy_share_pct": 11.885714285714286
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 2,
+      "skills": "1с программирование + erp-системы на базе 1с",
+      "frequency": 92,
+      "vacancy_share_pct": 10.514285714285714
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: предприятие 8",
+      "frequency": 80,
+      "vacancy_share_pct": 9.142857142857142
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + обновление конфигурации 1с",
+      "frequency": 69,
+      "vacancy_share_pct": 7.885714285714286
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: предприятие 8 + 1с: управление торговлей",
+      "frequency": 63,
+      "vacancy_share_pct": 7.2
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: бухгалтерия + 1с: управление торговлей",
+      "frequency": 62,
+      "vacancy_share_pct": 7.085714285714285
+    },
+    {
+      "region": "Екатеринбург",
+      "stack_size": 3,
+      "skills": "1с программирование + 1с: документооборот + 1с: предприятие 8",
+      "frequency": 50,
+      "vacancy_share_pct": 5.714285714285714
+    }
+  ],
+  "rankings": {
+    "2_increase": [
+      {
+        "stack_size": 2,
+        "skills": "1с программирование + json",
+        "frequency": 76,
+        "salary_n": 30,
+        "median_rub": 230000.0,
+        "base": "1с программирование",
+        "base_frequency": 9304,
+        "base_salary_n": 4115,
+        "base_median_rub": 150000.0,
+        "added_skill": "json",
+        "delta_rub": 80000.0,
+        "delta_pct": 53.33333333333334,
+        "anchor_skill": "1с программирование",
+        "anchor_frequency": 9304,
+        "anchor_salary_n": 4115,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 53.33333333333334
+      },
+      {
+        "stack_size": 2,
+        "skills": "1с: торговля + обновление конфигурации 1с",
+        "frequency": 51,
+        "salary_n": 38,
+        "median_rub": 224600.0,
+        "base": "обновление конфигурации 1с",
+        "base_frequency": 2454,
+        "base_salary_n": 1150,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: торговля",
+        "delta_rub": 74600.0,
+        "delta_pct": 49.73333333333334,
+        "anchor_skill": "обновление конфигурации 1с",
+        "anchor_frequency": 2454,
+        "anchor_salary_n": 1150,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 49.73333333333334
+      },
+      {
+        "stack_size": 2,
+        "skills": "1с: предприятие 8 + 1с: предприятие: бухгалтерский учет",
+        "frequency": 77,
+        "salary_n": 38,
+        "median_rub": 220000.0,
+        "base": "1с: предприятие 8",
+        "base_frequency": 4757,
+        "base_salary_n": 2297,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: предприятие: бухгалтерский учет",
+        "delta_rub": 70000.0,
+        "delta_pct": 46.66666666666666,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 46.66666666666666
+      },
+      {
+        "stack_size": 2,
+        "skills": "1с: зарплата и управление персоналом + базы данных",
+        "frequency": 69,
+        "salary_n": 33,
+        "median_rub": 220000.0,
+        "base": "1с: зарплата и управление персоналом",
+        "base_frequency": 2187,
+        "base_salary_n": 956,
+        "base_median_rub": 160000.0,
+        "added_skill": "базы данных",
+        "delta_rub": 60000.0,
+        "delta_pct": 37.5,
+        "anchor_skill": "1с: зарплата и управление персоналом",
+        "anchor_frequency": 2187,
+        "anchor_salary_n": 956,
+        "anchor_median_rub": 160000.0,
+        "delta_anchor_pct": 37.5
+      },
+      {
+        "stack_size": 2,
+        "skills": "api + mysql",
+        "frequency": 43,
+        "salary_n": 31,
+        "median_rub": 170000.0,
+        "base": "mysql",
+        "base_frequency": 296,
+        "base_salary_n": 170,
+        "base_median_rub": 125000.0,
+        "added_skill": "api",
+        "delta_rub": 45000.0,
+        "delta_pct": 36.00000000000001,
+        "anchor_skill": "mysql",
+        "anchor_frequency": 296,
+        "anchor_salary_n": 170,
+        "anchor_median_rub": 125000.0,
+        "delta_anchor_pct": 36.00000000000001
+      }
+    ],
+    "2_decrease": [
+      {
+        "stack_size": 2,
+        "skills": "1с программирование + администрирование",
+        "frequency": 90,
+        "salary_n": 37,
+        "median_rub": 95000.0,
+        "base": "1с программирование",
+        "base_frequency": 9304,
+        "base_salary_n": 4115,
+        "base_median_rub": 150000.0,
+        "added_skill": "администрирование",
+        "delta_rub": -55000.0,
+        "delta_pct": -36.66666666666667,
+        "anchor_skill": "1с программирование",
+        "anchor_frequency": 9304,
+        "anchor_salary_n": 4115,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -36.66666666666667
+      },
+      {
+        "stack_size": 2,
+        "skills": "css + git",
+        "frequency": 75,
+        "salary_n": 50,
+        "median_rub": 97500.0,
+        "base": "git",
+        "base_frequency": 438,
+        "base_salary_n": 221,
+        "base_median_rub": 150000.0,
+        "added_skill": "css",
+        "delta_rub": -52500.0,
+        "delta_pct": -35.0,
+        "anchor_skill": "git",
+        "anchor_frequency": 438,
+        "anchor_salary_n": 221,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -35.0
+      },
+      {
+        "stack_size": 2,
+        "skills": "git + html",
+        "frequency": 96,
+        "salary_n": 56,
+        "median_rub": 100000.0,
+        "base": "git",
+        "base_frequency": 438,
+        "base_salary_n": 221,
+        "base_median_rub": 150000.0,
+        "added_skill": "html",
+        "delta_rub": -50000.0,
+        "delta_pct": -33.333333333333336,
+        "anchor_skill": "git",
+        "anchor_frequency": 438,
+        "anchor_salary_n": 221,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -33.333333333333336
+      },
+      {
+        "stack_size": 2,
+        "skills": "1с: предприятие 8 + работа в условиях многозадачности",
+        "frequency": 65,
+        "salary_n": 35,
+        "median_rub": 100000.0,
+        "base": "1с: предприятие 8",
+        "base_frequency": 4757,
+        "base_salary_n": 2297,
+        "base_median_rub": 150000.0,
+        "added_skill": "работа в условиях многозадачности",
+        "delta_rub": -50000.0,
+        "delta_pct": -33.333333333333336,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -33.333333333333336
+      },
+      {
+        "stack_size": 2,
+        "skills": "1с: предприятие 8 + знание 1с",
+        "frequency": 47,
+        "salary_n": 34,
+        "median_rub": 100000.0,
+        "base": "1с: предприятие 8",
+        "base_frequency": 4757,
+        "base_salary_n": 2297,
+        "base_median_rub": 150000.0,
+        "added_skill": "знание 1с",
+        "delta_rub": -50000.0,
+        "delta_pct": -33.333333333333336,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -33.333333333333336
+      }
+    ],
+    "3_increase": [
+      {
+        "stack_size": 3,
+        "skills": "1с: предприятие + 1с: предприятие 8 + 1с: управление предприятием",
+        "frequency": 96,
+        "salary_n": 38,
+        "median_rub": 240000.0,
+        "base": "1с: предприятие + 1с: предприятие 8",
+        "base_frequency": 719,
+        "base_salary_n": 344,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: управление предприятием",
+        "delta_rub": 90000.0,
+        "delta_pct": 60.00000000000001,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 60.00000000000001
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: предприятие 8 + 1с: торговля + обновление конфигурации 1с",
+        "frequency": 45,
+        "salary_n": 35,
+        "median_rub": 235200.0,
+        "base": "1с: предприятие 8 + обновление конфигурации 1с",
+        "base_frequency": 1326,
+        "base_salary_n": 676,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: торговля",
+        "delta_rub": 85200.0,
+        "delta_pct": 56.800000000000004,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 56.800000000000004
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: предприятие 8 + 1с: розница + 1с: торговля",
+        "frequency": 43,
+        "salary_n": 43,
+        "median_rub": 214000.0,
+        "base": "1с: предприятие 8 + 1с: розница",
+        "base_frequency": 203,
+        "base_salary_n": 137,
+        "base_median_rub": 140000.0,
+        "added_skill": "1с: торговля",
+        "delta_rub": 74000.0,
+        "delta_pct": 52.85714285714285,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 42.66666666666667
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: комплексная автоматизация + 1с: предприятие 8 + создание конфигурации 1с",
+        "frequency": 93,
+        "salary_n": 51,
+        "median_rub": 225000.0,
+        "base": "1с: предприятие 8 + создание конфигурации 1с",
+        "base_frequency": 831,
+        "base_salary_n": 397,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: комплексная автоматизация",
+        "delta_rub": 75000.0,
+        "delta_pct": 50.0,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 50.0
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с программирование + 1с: предприятие 8 + 1с: предприятие: бухгалтерский учет",
+        "frequency": 75,
+        "salary_n": 36,
+        "median_rub": 225000.0,
+        "base": "1с программирование + 1с: предприятие 8",
+        "base_frequency": 4010,
+        "base_salary_n": 1987,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: предприятие: бухгалтерский учет",
+        "delta_rub": 75000.0,
+        "delta_pct": 50.0,
+        "anchor_skill": "1с программирование",
+        "anchor_frequency": 9304,
+        "anchor_salary_n": 4115,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": 50.0
+      }
+    ],
+    "3_decrease": [
+      {
+        "stack_size": 3,
+        "skills": "1с: бухгалтерия + 1с: документооборот + работа с базами данных",
+        "frequency": 66,
+        "salary_n": 36,
+        "median_rub": 100000.0,
+        "base": "1с: бухгалтерия + 1с: документооборот",
+        "base_frequency": 1015,
+        "base_salary_n": 523,
+        "base_median_rub": 160000.0,
+        "added_skill": "работа с базами данных",
+        "delta_rub": -60000.0,
+        "delta_pct": -37.5,
+        "anchor_skill": "1с: бухгалтерия",
+        "anchor_frequency": 3547,
+        "anchor_salary_n": 1656,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -33.333333333333336
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: бухгалтерия + 1с: зарплата и кадры + работа с базами данных",
+        "frequency": 68,
+        "salary_n": 35,
+        "median_rub": 100000.0,
+        "base": "1с: бухгалтерия + 1с: зарплата и кадры",
+        "base_frequency": 735,
+        "base_salary_n": 358,
+        "base_median_rub": 150000.0,
+        "added_skill": "работа с базами данных",
+        "delta_rub": -50000.0,
+        "delta_pct": -33.333333333333336,
+        "anchor_skill": "1с: бухгалтерия",
+        "anchor_frequency": 3547,
+        "anchor_salary_n": 1656,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -33.333333333333336
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: бухгалтерия + 1с: документооборот + 1с: торговля",
+        "frequency": 62,
+        "salary_n": 46,
+        "median_rub": 110000.0,
+        "base": "1с: бухгалтерия + 1с: документооборот",
+        "base_frequency": 1015,
+        "base_salary_n": 523,
+        "base_median_rub": 160000.0,
+        "added_skill": "1с: торговля",
+        "delta_rub": -50000.0,
+        "delta_pct": -31.25,
+        "anchor_skill": "1с: бухгалтерия",
+        "anchor_frequency": 3547,
+        "anchor_salary_n": 1656,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -26.66666666666667
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с программирование + erp-системы на базе 1с + обучение и развитие",
+        "frequency": 60,
+        "salary_n": 31,
+        "median_rub": 130000.0,
+        "base": "1с программирование + erp-системы на базе 1с",
+        "base_frequency": 1866,
+        "base_salary_n": 704,
+        "base_median_rub": 180000.0,
+        "added_skill": "обучение и развитие",
+        "delta_rub": -50000.0,
+        "delta_pct": -27.77777777777778,
+        "anchor_skill": "1с программирование",
+        "anchor_frequency": 9304,
+        "anchor_salary_n": 4115,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -13.33333333333333
+      },
+      {
+        "stack_size": 3,
+        "skills": "1с: документооборот + 1с: предприятие 8 + 1с: торговля",
+        "frequency": 63,
+        "salary_n": 46,
+        "median_rub": 110000.0,
+        "base": "1с: документооборот + 1с: предприятие 8",
+        "base_frequency": 1131,
+        "base_salary_n": 554,
+        "base_median_rub": 150000.0,
+        "added_skill": "1с: торговля",
+        "delta_rub": -40000.0,
+        "delta_pct": -26.66666666666667,
+        "anchor_skill": "1с: предприятие 8",
+        "anchor_frequency": 4757,
+        "anchor_salary_n": 2297,
+        "anchor_median_rub": 150000.0,
+        "delta_anchor_pct": -26.66666666666667
+      }
+    ]
+  },
+  "skill_count_histogram": {
+    "0": 6414,
+    "1": 1026,
+    "2": 1136,
+    "3": 1346,
+    "4": 1790,
+    "5": 2119,
+    "6": 1228,
+    "7": 934,
+    "8": 800,
+    "9": 496,
+    "10": 447,
+    "11": 231,
+    "12": 171,
+    "13": 164,
+    "14": 109,
+    "15": 72,
+    "16": 68,
+    "17": 22,
+    "18": 23,
+    "19": 19,
+    "20": 15,
+    "21": 7,
+    "22": 13,
+    "23": 11,
+    "24": 3,
+    "25": 8,
+    "26": 1,
+    "27": 3,
+    "28": 2,
+    "29": 6,
+    "30": 14
+  },
+  "overall_median_rub": 150000.0,
+  "top_frequencies": {
+    "1": [
+      {
+        "skills": "1с программирование",
+        "frequency": 9304
+      },
+      {
+        "skills": "1с: предприятие 8",
+        "frequency": 4757
+      },
+      {
+        "skills": "1с: бухгалтерия",
+        "frequency": 3547
+      },
+      {
+        "skills": "1с: управление торговлей",
+        "frequency": 2841
+      },
+      {
+        "skills": "обновление конфигурации 1с",
+        "frequency": 2454
+      },
+      {
+        "skills": "erp-системы на базе 1с",
+        "frequency": 2288
+      },
+      {
+        "skills": "1с: зарплата и управление персоналом",
+        "frequency": 2187
+      },
+      {
+        "skills": "1с: документооборот",
+        "frequency": 2025
+      },
+      {
+        "skills": "1с: предприятие",
+        "frequency": 1615
+      },
+      {
+        "skills": "создание конфигурации 1с",
+        "frequency": 1569
+      }
+    ],
+    "2": [
+      {
+        "skills": "1с программирование + 1с: предприятие 8",
+        "frequency": 4010
+      },
+      {
+        "skills": "1с программирование + 1с: бухгалтерия",
+        "frequency": 2852
+      },
+      {
+        "skills": "1с программирование + 1с: управление торговлей",
+        "frequency": 2266
+      },
+      {
+        "skills": "1с программирование + обновление конфигурации 1с",
+        "frequency": 2183
+      },
+      {
+        "skills": "1с: бухгалтерия + 1с: предприятие 8",
+        "frequency": 1908
+      },
+      {
+        "skills": "1с программирование + erp-системы на базе 1с",
+        "frequency": 1866
+      },
+      {
+        "skills": "1с программирование + 1с: документооборот",
+        "frequency": 1663
+      },
+      {
+        "skills": "1с программирование + 1с: зарплата и управление персоналом",
+        "frequency": 1611
+      },
+      {
+        "skills": "1с: предприятие 8 + 1с: управление торговлей",
+        "frequency": 1492
+      },
+      {
+        "skills": "1с программирование + создание конфигурации 1с",
+        "frequency": 1440
+      }
+    ],
+    "3": [
+      {
+        "skills": "1с программирование + 1с: бухгалтерия + 1с: предприятие 8",
+        "frequency": 1588
+      },
+      {
+        "skills": "1с программирование + 1с: предприятие 8 + 1с: управление торговлей",
+        "frequency": 1297
+      },
+      {
+        "skills": "1с программирование + 1с: предприятие 8 + обновление конфигурации 1с",
+        "frequency": 1236
+      },
+      {
+        "skills": "1с программирование + 1с: бухгалтерия + 1с: управление торговлей",
+        "frequency": 1158
+      },
+      {
+        "skills": "1с программирование + 1с: бухгалтерия + 1с: зарплата и управление персоналом",
+        "frequency": 1008
+      },
+      {
+        "skills": "1с программирование + 1с: бухгалтерия + обновление конфигурации 1с",
+        "frequency": 963
+      },
+      {
+        "skills": "1с программирование + 1с: документооборот + 1с: предприятие 8",
+        "frequency": 963
+      },
+      {
+        "skills": "1с программирование + 1с: предприятие 8 + erp-системы на базе 1с",
+        "frequency": 874
+      },
+      {
+        "skills": "1с: бухгалтерия + 1с: предприятие 8 + 1с: управление торговлей",
+        "frequency": 874
+      },
+      {
+        "skills": "1с программирование + 1с: зарплата и управление персоналом + 1с: предприятие 8",
+        "frequency": 854
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "key": "hw3/results/skills_1.csv",
+    "bytes": 89279
+  },
+  {
+    "key": "hw3/results/skills_2.csv",
+    "bytes": 2034345
+  },
+  {
+    "key": "hw3/results/skills_3.csv",
+    "bytes": 18887511
+  },
+  {
+    "key": "hw3/results/vacancies.csv",
+    "bytes": 3388483
+  },
+  {
+    "key": "hw3/results/region_stacks.csv",
+    "bytes": 5595
+  },
+  {
+    "key": "hw3/results/regions.csv",
+    "bytes": 442
+  },
+  {
+    "key": "hw3/results/salary_impacts.csv",
+    "bytes": 437975
+  }
+]
