@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-04T13:00:44.357217+00:00",
+  "quorum": [
+    {
+      "stage": "three_servers",
+      "roles": {
+        "zk1": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x0\nMode: follower\nNode count: 5",
+        "zk2": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x0\nMode: follower\nNode count: 5",
+        "zk3": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x100000000\nMode: leader\nNode count: 5\nProposal sizes last/min/max: -1/-1/-1"
+      },
+      "write_ok": true
+    },
+    {
+      "stage": "one_server_stopped",
+      "stopped": [
+        "zk1"
+      ],
+      "roles": {
+        "zk1": "TimeoutError",
+        "zk2": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 1/87.8889/419\nReceived: 12\nSent: 11\nConnections: 1\nOutstanding: 0\nZxid: 0x100000006\nMode: follower\nNode count: 6",
+        "zk3": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 3\nSent: 2\nConnections: 1\nOutstanding: 0\nZxid: 0x100000006\nMode: leader\nNode count: 6\nProposal sizes last/min/max: 48/36/145"
+      },
+      "write_ok": true
+    },
+    {
+      "stage": "two_servers_stopped",
+      "stopped": [
+        "zk1",
+        "zk2"
+      ],
+      "roles": {
+        "zk1": "TimeoutError",
+        "zk2": "TimeoutError",
+        "zk3": "This ZooKeeper instance is not currently serving requests"
+      },
+      "write_ok": false,
+      "error": "KazooTimeoutError",
+      "message": "Connection time-out"
+    },
+    {
+      "stage": "ensemble_restored",
+      "roles": {
+        "zk1": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x10000000a\nMode: follower\nNode count: 6",
+        "zk2": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x10000000a\nMode: follower\nNode count: 6",
+        "zk3": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\nLatency min/avg/max: 0/0.0/0\nReceived: 2\nSent: 1\nConnections: 1\nOutstanding: 0\nZxid: 0x200000000\nMode: leader\nNode count: 6\nProposal sizes last/min/max: -1/-1/-1"
+      },
+      "write_ok": true
+    },
+    {
+      "stage": "ephemeral_session_closed",
+      "path": "/homework4/ephemeral-demo-3863026c",
+      "owner_session_hex": "0x2000008bb8e0001",
+      "existed_during_session": true,
+      "exists_after_quit": false,
+      "zkcli_exit_code": 0
+    }
+  ],
+  "scenarios": {
+    "unfenced": {
+      "scenario": "unfenced-20261104T130215",
+      "FENCING": 0,
+      "old_leader": "a",
+      "backup": "b",
+      "pause_requested_ns": 1793797342498473900,
+      "pause_completed_ns": 1793797342925739000,
+      "new_leader_ns": 1793797353385715110,
+      "resume_requested_ns": 1793797382926363600,
+      "failover_s": 10.45997611,
+      "pause_s": 40.0006246,
+      "old_checkpoint_rows": 10000,
+      "resumed_from_rows": 10000,
+      "new_epoch": 2,
+      "accepted_publications": 2,
+      "pointer_version": 2,
+      "pointer_coordinator": "a",
+      "stale_error": null,
+      "comparisons": [
+        {
+          "coordinator": "a",
+          "keys": 30809,
+          "occurrences": 231685,
+          "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+          "all_frequencies_equal_hw3": true
+        },
+        {
+          "coordinator": "b",
+          "keys": 30809,
+          "occurrences": 231685,
+          "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+          "all_frequencies_equal_hw3": true
+        }
+      ]
+    },
+    "fenced": {
+      "scenario": "fenced-20261104T130320",
+      "FENCING": 1,
+      "old_leader": "b",
+      "backup": "a",
+      "pause_requested_ns": 1793797404540037300,
+      "pause_completed_ns": 1793797404945618400,
+      "new_leader_ns": 1793797415381480130,
+      "resume_requested_ns": 1793797444947775800,
+      "failover_s": 10.43586173,
+      "pause_s": 40.0021574,
+      "old_checkpoint_rows": 10000,
+      "resumed_from_rows": 10000,
+      "new_epoch": 2,
+      "accepted_publications": 1,
+      "pointer_version": 1,
+      "pointer_coordinator": "a",
+      "stale_error": "BadVersionError",
+      "comparisons": [
+        {
+          "coordinator": "a",
+          "keys": 30809,
+          "occurrences": 231685,
+          "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+          "all_frequencies_equal_hw3": true
+        },
+        {
+          "coordinator": "b",
+          "keys": 30809,
+          "occurrences": 231685,
+          "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+          "all_frequencies_equal_hw3": true
+        }
+      ]
+    }
+  },
+  "environment": {
+    "zookeeper": "3.9.6",
+    "image_digest": [
+      "zookeeper@sha256:bbf678337a9242fcb6e49e51193855078ec515251cf11fe0bcfabae6a10e040a"
+    ],
+    "session_timeout_s": 10,
+    "branch": "apache-zookeeper"
+  }
+}

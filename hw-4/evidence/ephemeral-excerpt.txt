@@ -1,0 +1,4 @@
+Created /homework4/ephemeral-demo-3863026c
+ephemeralOwner = 0x2000008bb8e0001
+WatchedEvent state:Closed type:None path:null zxid: -1
+{"exists_after_quit": false}

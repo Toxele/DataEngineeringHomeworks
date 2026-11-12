@@ -1,0 +1,59 @@
+ Image apache-zookeeper-coordinator:local Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 560B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 310B done
+#2 DONE 0.2s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 3.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context:
+#4 transferring context: 100B 0.7s done
+#4 DONE 4.4s
+
+#5 [internal] load build context
+#5 transferring context:
+#5 transferring context: 7.49kB 0.0s done
+#5 DONE 4.9s
+
+#6 [1/5] FROM docker.io/library/python:3.12-slim@sha256:b18b261e1b4974b4f321451ad5251ded85abb22c2b8b262da527dda1d031ab30
+#6 resolve docker.io/library/python:3.12-slim@sha256:b18b261e1b4974b4f321451ad5251ded85abb22c2b8b262da527dda1d031ab30
+#6 resolve docker.io/library/python:3.12-slim@sha256:b18b261e1b4974b4f321451ad5251ded85abb22c2b8b262da527dda1d031ab30 6.3s done
+#6 DONE 7.9s
+
+#7 [3/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [2/5] WORKDIR /app
+#8 CACHED
+
+#9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [5/5] COPY coordination ./coordination
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.5s done
+#11 exporting manifest sha256:3e9f9ab34d15a5fac7a2a6c7b102fdd847cb810e5620a47f33a4a3c9bde73326
+#11 exporting manifest sha256:3e9f9ab34d15a5fac7a2a6c7b102fdd847cb810e5620a47f33a4a3c9bde73326 0.5s done
+#11 exporting config sha256:bb07e67b1f96d30d3c1e5faad8cb59ae8764ea1ddee6a0f936bb89ce11ca165c
+#11 exporting config sha256:bb07e67b1f96d30d3c1e5faad8cb59ae8764ea1ddee6a0f936bb89ce11ca165c 0.3s done
+#11 exporting attestation manifest sha256:3f6d3a60e0a91a00296cd07785b0ce07029d832494ab9703d7365ac4f9f93c1b
+#11 exporting attestation manifest sha256:3f6d3a60e0a91a00296cd07785b0ce07029d832494ab9703d7365ac4f9f93c1b 1.3s done
+#11 exporting manifest list sha256:4c9279b13e12809d6dd70f6caa759e534683bcda754309fb0d2ea66e810cfc2a
+#11 exporting manifest list sha256:4c9279b13e12809d6dd70f6caa759e534683bcda754309fb0d2ea66e810cfc2a 0.4s done
+#11 naming to docker.io/library/apache-zookeeper-coordinator:local
+#11 naming to docker.io/library/apache-zookeeper-coordinator:local 0.0s done
+#11 unpacking to docker.io/library/apache-zookeeper-coordinator:local
+#11 unpacking to docker.io/library/apache-zookeeper-coordinator:local 0.4s done
+#11 DONE 3.9s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.1s
+ Image apache-zookeeper-coordinator:local Built

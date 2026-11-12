@@ -1,0 +1,7 @@
+NAME                                   IMAGE                                                                     COMMAND                  SERVICE         CREATED          STATUS                      PORTS
+apache-zookeeper-lab-coordinator-a-1   sha256:e954bbebed0008b420ff705fde1cfb42553bd85ab7dbbed20b8035820fce7267   "python -m coordinat…"   coordinator-a   15 minutes ago   Exited (0) 14 minutes ago
+apache-zookeeper-lab-coordinator-b-1   sha256:e954bbebed0008b420ff705fde1cfb42553bd85ab7dbbed20b8035820fce7267   "python -m coordinat…"   coordinator-b   15 minutes ago   Exited (0) 14 minutes ago
+apache-zookeeper-lab-receiver-1        apache-zookeeper-coordinator:local                                        "python -m coordinat…"   receiver        12 minutes ago   Up 12 minutes               127.0.0.1:9180->9180/tcp
+apache-zookeeper-lab-zk1-1             zookeeper:3.9.6                                                           "/docker-entrypoint.…"   zk1             17 minutes ago   Up 16 minutes               127.0.0.1:2181->2181/tcp
+apache-zookeeper-lab-zk2-1             zookeeper:3.9.6                                                           "/docker-entrypoint.…"   zk2             17 minutes ago   Up 16 minutes               127.0.0.1:2182->2181/tcp
+apache-zookeeper-lab-zk3-1             zookeeper:3.9.6                                                           "/docker-entrypoint.…"   zk3             17 minutes ago   Up 17 minutes               127.0.0.1:2183->2181/tcp

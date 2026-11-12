@@ -1,0 +1,33 @@
+{"time": "2026-11-04T13:02:18.938026+00:00", "time_ns": 1793797338938045299, "event": "session_state", "state": "CONNECTED"}
+{"time": "2026-11-04T13:02:19.274488+00:00", "time_ns": 1793797339274501137, "event": "candidate_registered", "path": "/homework4/unfenced-20261104T130215/election/candidate-0000000000", "session_timeout_ms": 10000}
+{"time": "2026-11-04T13:02:19.860175+00:00", "time_ns": 1793797339860183952, "event": "leader_acquired", "coordinator": "a", "epoch": 1}
+{"time": "2026-11-04T13:02:19.864108+00:00", "time_ns": 1793797339864117807, "event": "checkpoint_loaded", "rows": 0, "selected": 0, "keys": 0}
+{"time": "2026-11-04T13:02:22.367128+00:00", "time_ns": 1793797342367146170, "event": "checkpoint_saved", "rows": 10000, "epoch": 1}
+{"time": "2026-11-04T13:03:03.126763+00:00", "time_ns": 1793797383126778321, "event": "session_state", "state": "SUSPENDED"}
+{"time": "2026-11-04T13:03:03.160342+00:00", "time_ns": 1793797383160380139, "event": "session_state", "state": "LOST"}
+{"time": "2026-11-04T13:03:03.240877+00:00", "time_ns": 1793797383240893342, "event": "session_state", "state": "CONNECTED"}
+{"time": "2026-11-04T13:03:03.448680+00:00", "time_ns": 1793797383448695335, "event": "checkpoint_skipped", "rows": 20000, "epoch": 1}
+{"time": "2026-11-04T13:03:04.129818+00:00", "time_ns": 1793797384129835472, "event": "checkpoint_skipped", "rows": 30000, "epoch": 1}
+{"time": "2026-11-04T13:03:04.875105+00:00", "time_ns": 1793797384875117552, "event": "checkpoint_skipped", "rows": 40000, "epoch": 1}
+{"time": "2026-11-04T13:03:05.598209+00:00", "time_ns": 1793797385598225086, "event": "checkpoint_skipped", "rows": 50000, "epoch": 1}
+{"time": "2026-11-04T13:03:06.295302+00:00", "time_ns": 1793797386295314283, "event": "checkpoint_skipped", "rows": 60000, "epoch": 1}
+{"time": "2026-11-04T13:03:06.993465+00:00", "time_ns": 1793797386993480979, "event": "checkpoint_skipped", "rows": 70000, "epoch": 1}
+{"time": "2026-11-04T13:03:07.693369+00:00", "time_ns": 1793797387693382069, "event": "checkpoint_skipped", "rows": 80000, "epoch": 1}
+{"time": "2026-11-04T13:03:08.395504+00:00", "time_ns": 1793797388395517455, "event": "checkpoint_skipped", "rows": 90000, "epoch": 1}
+{"time": "2026-11-04T13:03:09.092731+00:00", "time_ns": 1793797389092742552, "event": "checkpoint_skipped", "rows": 100000, "epoch": 1}
+{"time": "2026-11-04T13:03:09.779774+00:00", "time_ns": 1793797389779788774, "event": "checkpoint_skipped", "rows": 110000, "epoch": 1}
+{"time": "2026-11-04T13:03:10.479996+00:00", "time_ns": 1793797390480010264, "event": "checkpoint_skipped", "rows": 120000, "epoch": 1}
+{"time": "2026-11-04T13:03:11.181520+00:00", "time_ns": 1793797391181531558, "event": "checkpoint_skipped", "rows": 130000, "epoch": 1}
+{"time": "2026-11-04T13:03:11.939983+00:00", "time_ns": 1793797391939995602, "event": "checkpoint_skipped", "rows": 140000, "epoch": 1}
+{"time": "2026-11-04T13:03:12.679679+00:00", "time_ns": 1793797392679690516, "event": "checkpoint_skipped", "rows": 150000, "epoch": 1}
+{"time": "2026-11-04T13:03:13.447721+00:00", "time_ns": 1793797393447733821, "event": "checkpoint_skipped", "rows": 160000, "epoch": 1}
+{"time": "2026-11-04T13:03:14.145567+00:00", "time_ns": 1793797394145578355, "event": "checkpoint_skipped", "rows": 170000, "epoch": 1}
+{"time": "2026-11-04T13:03:14.861858+00:00", "time_ns": 1793797394861869344, "event": "checkpoint_skipped", "rows": 180000, "epoch": 1}
+{"time": "2026-11-04T13:03:15.586364+00:00", "time_ns": 1793797395586378073, "event": "checkpoint_skipped", "rows": 190000, "epoch": 1}
+{"time": "2026-11-04T13:03:16.290279+00:00", "time_ns": 1793797396290295741, "event": "checkpoint_skipped", "rows": 200000, "epoch": 1}
+{"time": "2026-11-04T13:03:16.987708+00:00", "time_ns": 1793797396987719476, "event": "checkpoint_skipped", "rows": 210000, "epoch": 1}
+{"time": "2026-11-04T13:03:17.733934+00:00", "time_ns": 1793797397733944457, "event": "checkpoint_skipped", "rows": 220000, "epoch": 1}
+{"time": "2026-11-04T13:03:18.440348+00:00", "time_ns": 1793797398440358730, "event": "checkpoint_skipped", "rows": 229388, "epoch": 1}
+{"time": "2026-11-04T13:03:19.246912+00:00", "time_ns": 1793797399246924300, "event": "result_published", "message": "записал результат", "epoch": 1, "pointer_version": 2, "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941"}
+{"time": "2026-11-04T13:03:19.316176+00:00", "time_ns": 1793797399316192038, "event": "session_state", "state": "LOST"}
+{"time": "2026-11-04T13:03:19.318071+00:00", "time_ns": 1793797399318081222, "event": "coordinator_finished"}

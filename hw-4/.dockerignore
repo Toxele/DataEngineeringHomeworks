@@ -1,0 +1,8 @@
+.env
+state
+logs
+evidence
+artifacts
+report
+tests
+__pycache__

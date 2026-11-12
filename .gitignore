@@ -25,3 +25,14 @@ __pycache__/
 /hw-3/**/*.pdf
 /hw-3/**/*.tex
 /ignore/
+/hw-4/.env
+/hw-4/.runtime/
+/hw-4/state/
+/hw-4/artifacts/
+/hw-4/explanation.md
+/hw-4/report/*.tex
+/hw-4/report/*.pdf
+/hw-4/report/*.aux
+/hw-4/report/*.log
+/hw-4/report/*.out
+/hw-4/report/build-*.txt
