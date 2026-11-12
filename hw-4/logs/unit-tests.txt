@@ -1,0 +1,8 @@
+test_epoch_remains_after_receiver_restart (test_publication.PublicationTests.test_epoch_remains_after_receiver_restart) ... ok
+test_fenced_old_leader_is_rejected_without_partial_write (test_publication.PublicationTests.test_fenced_old_leader_is_rejected_without_partial_write) ... ok
+test_unfenced_old_leader_overwrites_pointer (test_publication.PublicationTests.test_unfenced_old_leader_overwrites_pointer) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.145s
+
+OK

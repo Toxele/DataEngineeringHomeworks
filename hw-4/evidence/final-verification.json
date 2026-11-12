@@ -1,0 +1,22 @@
+{
+  "unfenced": {
+    "receiver_survived_restart": true,
+    "pointer_version": 2,
+    "pointer_coordinator": "a",
+    "checkpoint": {
+      "path": "/state/checkpoints/unfenced-20261104T130215/epoch-2-rows-229388.json",
+      "rows": 229388,
+      "epoch": 2
+    }
+  },
+  "fenced": {
+    "receiver_survived_restart": true,
+    "pointer_version": 1,
+    "pointer_coordinator": "a",
+    "checkpoint": {
+      "path": "/state/checkpoints/fenced-20261104T130320/epoch-2-rows-229388.json",
+      "rows": 229388,
+      "epoch": 2
+    }
+  }
+}

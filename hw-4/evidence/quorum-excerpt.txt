@@ -1,0 +1,6 @@
+{
+  "zk3": "This ZooKeeper instance is not currently serving requests",
+  "write_ok": false,
+  "error": "KazooTimeoutError",
+  "message": "Connection time-out"
+}

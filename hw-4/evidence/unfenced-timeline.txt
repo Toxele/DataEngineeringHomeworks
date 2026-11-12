@@ -1,0 +1,6 @@
+16:02:22.498  pause requested
+16:02:22.925  pause completed
+16:02:33.385  backup elected
+16:02:54.147  backup published
+16:03:02.926  unpause requested
+16:03:19.246  old leader finished

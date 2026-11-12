@@ -1,0 +1,29 @@
+{"time": "2026-11-04T13:02:19.005317+00:00", "time_ns": 1793797339005333466, "event": "session_state", "state": "CONNECTED"}
+{"time": "2026-11-04T13:02:19.393357+00:00", "time_ns": 1793797339393373953, "event": "candidate_registered", "path": "/homework4/unfenced-20261104T130215/election/candidate-0000000001", "session_timeout_ms": 10000}
+{"time": "2026-11-04T13:02:33.385700+00:00", "time_ns": 1793797353385715110, "event": "leader_acquired", "coordinator": "b", "epoch": 2}
+{"time": "2026-11-04T13:02:33.401642+00:00", "time_ns": 1793797353401657449, "event": "checkpoint_loaded", "rows": 10000, "selected": 797, "keys": 3854}
+{"time": "2026-11-04T13:02:34.442143+00:00", "time_ns": 1793797354442159184, "event": "checkpoint_saved", "rows": 20000, "epoch": 2}
+{"time": "2026-11-04T13:02:35.237415+00:00", "time_ns": 1793797355237427530, "event": "checkpoint_saved", "rows": 30000, "epoch": 2}
+{"time": "2026-11-04T13:02:36.067449+00:00", "time_ns": 1793797356067465159, "event": "checkpoint_saved", "rows": 40000, "epoch": 2}
+{"time": "2026-11-04T13:02:36.952014+00:00", "time_ns": 1793797356952027145, "event": "checkpoint_saved", "rows": 50000, "epoch": 2}
+{"time": "2026-11-04T13:02:37.715824+00:00", "time_ns": 1793797357715837381, "event": "checkpoint_saved", "rows": 60000, "epoch": 2}
+{"time": "2026-11-04T13:02:38.589434+00:00", "time_ns": 1793797358589446573, "event": "checkpoint_saved", "rows": 70000, "epoch": 2}
+{"time": "2026-11-04T13:02:39.386550+00:00", "time_ns": 1793797359386574579, "event": "checkpoint_saved", "rows": 80000, "epoch": 2}
+{"time": "2026-11-04T13:02:40.204931+00:00", "time_ns": 1793797360204944819, "event": "checkpoint_saved", "rows": 90000, "epoch": 2}
+{"time": "2026-11-04T13:02:41.257676+00:00", "time_ns": 1793797361257688719, "event": "checkpoint_saved", "rows": 100000, "epoch": 2}
+{"time": "2026-11-04T13:02:42.630530+00:00", "time_ns": 1793797362630545480, "event": "checkpoint_saved", "rows": 110000, "epoch": 2}
+{"time": "2026-11-04T13:02:43.513137+00:00", "time_ns": 1793797363513150617, "event": "checkpoint_saved", "rows": 120000, "epoch": 2}
+{"time": "2026-11-04T13:02:44.332430+00:00", "time_ns": 1793797364332445571, "event": "checkpoint_saved", "rows": 130000, "epoch": 2}
+{"time": "2026-11-04T13:02:45.139658+00:00", "time_ns": 1793797365139675936, "event": "checkpoint_saved", "rows": 140000, "epoch": 2}
+{"time": "2026-11-04T13:02:45.981160+00:00", "time_ns": 1793797365981178160, "event": "checkpoint_saved", "rows": 150000, "epoch": 2}
+{"time": "2026-11-04T13:02:47.157109+00:00", "time_ns": 1793797367157156153, "event": "checkpoint_saved", "rows": 160000, "epoch": 2}
+{"time": "2026-11-04T13:02:47.961299+00:00", "time_ns": 1793797367961316697, "event": "checkpoint_saved", "rows": 170000, "epoch": 2}
+{"time": "2026-11-04T13:02:48.801903+00:00", "time_ns": 1793797368801950828, "event": "checkpoint_saved", "rows": 180000, "epoch": 2}
+{"time": "2026-11-04T13:02:49.639550+00:00", "time_ns": 1793797369639570089, "event": "checkpoint_saved", "rows": 190000, "epoch": 2}
+{"time": "2026-11-04T13:02:50.438786+00:00", "time_ns": 1793797370438801802, "event": "checkpoint_saved", "rows": 200000, "epoch": 2}
+{"time": "2026-11-04T13:02:51.312651+00:00", "time_ns": 1793797371312673109, "event": "checkpoint_saved", "rows": 210000, "epoch": 2}
+{"time": "2026-11-04T13:02:52.537421+00:00", "time_ns": 1793797372537438472, "event": "checkpoint_saved", "rows": 220000, "epoch": 2}
+{"time": "2026-11-04T13:02:53.467590+00:00", "time_ns": 1793797373467607610, "event": "checkpoint_saved", "rows": 229388, "epoch": 2}
+{"time": "2026-11-04T13:02:54.147302+00:00", "time_ns": 1793797374147314165, "event": "result_published", "message": "записал результат", "epoch": 2, "pointer_version": 1, "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941"}
+{"time": "2026-11-04T13:02:54.243209+00:00", "time_ns": 1793797374243228077, "event": "session_state", "state": "LOST"}
+{"time": "2026-11-04T13:02:54.245126+00:00", "time_ns": 1793797374245140594, "event": "coordinator_finished"}

@@ -1,0 +1,94 @@
+name: apache-zookeeper-lab
+
+x-zookeeper: &zookeeper
+  image: zookeeper:3.9.6
+  restart: "no"
+  mem_limit: 384m
+  environment: &zookeeper-environment
+    ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+    ZOO_TICK_TIME: 2000
+    ZOO_INIT_LIMIT: 10
+    ZOO_SYNC_LIMIT: 5
+    ZOO_MAX_CLIENT_CNXNS: 60
+    ZOO_4LW_COMMANDS_WHITELIST: ruok,srvr,stat,mntr
+    ZOO_ADMINSERVER_ENABLED: "false"
+    JVMFLAGS: -Xms64m -Xmx128m
+
+x-coordinator: &coordinator
+  image: apache-zookeeper-coordinator:local
+  build: .
+  profiles: [calculation]
+  restart: "no"
+  mem_limit: 256m
+  env_file: .env
+  environment: &coordinator-environment
+    ZK_HOSTS: zk1:2181,zk2:2181,zk3:2181
+    SESSION_TIMEOUT: "10"
+    SCENARIO: ${SCENARIO:-unfenced}
+    FENCING: ${FENCING:-0}
+    RESULT_ENDPOINT: http://receiver:9180
+    CHUNK_SIZE: "2000"
+    CHUNK_DELAY: "0.12"
+  volumes:
+    - ./state:/state
+    - ./logs:/logs
+    - ../hw-3/lab:/previous/lab:ro
+
+services:
+  zk1:
+    <<: *zookeeper
+    environment:
+      <<: *zookeeper-environment
+      ZOO_MY_ID: 1
+    ports: ["127.0.0.1:2181:2181"]
+    volumes:
+      - ./state/zk1/data:/data
+      - ./state/zk1/datalog:/datalog
+
+  zk2:
+    <<: *zookeeper
+    environment:
+      <<: *zookeeper-environment
+      ZOO_MY_ID: 2
+    ports: ["127.0.0.1:2182:2181"]
+    volumes:
+      - ./state/zk2/data:/data
+      - ./state/zk2/datalog:/datalog
+
+  zk3:
+    <<: *zookeeper
+    environment:
+      <<: *zookeeper-environment
+      ZOO_MY_ID: 3
+    ports: ["127.0.0.1:2183:2181"]
+    volumes:
+      - ./state/zk3/data:/data
+      - ./state/zk3/datalog:/datalog
+
+  receiver:
+    image: apache-zookeeper-coordinator:local
+    build: .
+    command: [python, -m, coordination.receiver]
+    restart: "no"
+    mem_limit: 192m
+    ports: ["127.0.0.1:9180:9180"]
+    volumes:
+      - ./state:/state
+      - ./logs:/logs
+      - ./evidence:/evidence:ro
+
+  coordinator-a:
+    <<: *coordinator
+    environment:
+      <<: *coordinator-environment
+      COORDINATOR_ID: a
+
+  coordinator-b:
+    <<: *coordinator
+    environment:
+      <<: *coordinator-environment
+      COORDINATOR_ID: b
+
+networks:
+  default:
+    name: apache-zookeeper-lab

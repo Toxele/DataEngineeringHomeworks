@@ -1,0 +1,28 @@
+{
+  "name": "fenced-20261104T130320",
+  "fencing": 1,
+  "epoch": 2,
+  "pointer_version": 1,
+  "pointer": {
+    "coordinator": "a",
+    "epoch": 2,
+    "path": "/state/results/fenced-20261104T130320-a.csv",
+    "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+    "rows": 229388,
+    "selected": 18698,
+    "keys": 30809,
+    "occurrences": 231685
+  },
+  "publications": [
+    {
+      "coordinator": "a",
+      "epoch": 2,
+      "path": "/state/results/fenced-20261104T130320-a.csv",
+      "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+      "rows": 229388,
+      "selected": 18698,
+      "keys": 30809,
+      "occurrences": 231685
+    }
+  ]
+}
