@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-waiting
+  namespace: hw5
+spec:
+  restartPolicy: Never
+  terminationGracePeriodSeconds: 1
+  containers:
+  - name: task
+    image: skill-pairs:hw5
+    imagePullPolicy: Never
+    command:
+    - python
+    - -c
+    - 'import time
+
+      time.sleep(600)'
+    resources:
+      requests:
+        cpu: '7'
+        memory: 32Mi
+      limits:
+        cpu: '7'
+        memory: 64Mi

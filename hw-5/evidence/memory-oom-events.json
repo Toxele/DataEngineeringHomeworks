@@ -1,0 +1,459 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:14Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "memory-oom-gq28n",
+        "namespace": "hw5",
+        "resourceVersion": "1189",
+        "uid": "fea99bba-5ef2-4ba8-bd4b-301856020a43"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:14Z",
+      "message": "Successfully assigned hw5/memory-oom-gq28n to docker-desktop",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:14Z",
+        "name": "memory-oom-gq28n.18ec09191dd66b74",
+        "namespace": "hw5",
+        "resourceVersion": "1193",
+        "uid": "8f807a95-be75-4cad-ae42-153342180989"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:22Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-oom-gq28n",
+        "namespace": "hw5",
+        "resourceVersion": "1191",
+        "uid": "fea99bba-5ef2-4ba8-bd4b-301856020a43"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:22Z",
+      "message": "Container image \"skill-pairs:hw5\" already present on machine",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:22Z",
+        "name": "memory-oom-gq28n.18ec091ac87df822",
+        "namespace": "hw5",
+        "resourceVersion": "1204",
+        "uid": "fe74ea92-0524-4781-9dda-c1ab5415ea4a"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:25Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-oom-gq28n",
+        "namespace": "hw5",
+        "resourceVersion": "1191",
+        "uid": "fea99bba-5ef2-4ba8-bd4b-301856020a43"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:25Z",
+      "message": "Created container: calculation",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:25Z",
+        "name": "memory-oom-gq28n.18ec091b93994540",
+        "namespace": "hw5",
+        "resourceVersion": "1209",
+        "uid": "2fc23d6a-5ab7-43db-9851-81e1d5e23244"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:26Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-oom-gq28n",
+        "namespace": "hw5",
+        "resourceVersion": "1191",
+        "uid": "fea99bba-5ef2-4ba8-bd4b-301856020a43"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:26Z",
+      "message": "Started container calculation",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:26Z",
+        "name": "memory-oom-gq28n.18ec091bbd0c9763",
+        "namespace": "hw5",
+        "resourceVersion": "1210",
+        "uid": "177e729c-6a70-4aab-b13d-dd2097584874"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:14Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "memory-oom",
+        "namespace": "hw5",
+        "resourceVersion": "1188",
+        "uid": "77e0bf3e-1443-4bf5-afe4-bcb61018633d"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:14Z",
+      "message": "Created pod: memory-oom-gq28n",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:14Z",
+        "name": "memory-oom.18ec0919102f07da",
+        "namespace": "hw5",
+        "resourceVersion": "1190",
+        "uid": "b1d69f6b-3854-4ebe-befe-8fb2734d70db"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:33Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "memory-oom",
+        "namespace": "hw5",
+        "resourceVersion": "1227",
+        "uid": "77e0bf3e-1443-4bf5-afe4-bcb61018633d"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:33Z",
+      "message": "Job has reached the specified backoff limit",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:33Z",
+        "name": "memory-oom.18ec091d78aff36a",
+        "namespace": "hw5",
+        "resourceVersion": "1231",
+        "uid": "ae2fe8c7-a276-4c02-b08f-f402db9f5b6d"
+      },
+      "reason": "BackoffLimitExceeded",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Warning"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:57:53Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1051",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:57:53Z",
+      "message": "Successfully assigned hw5/memory-profile-ch6zj to docker-desktop",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:57:53Z",
+        "name": "memory-profile-ch6zj.18ec09063f4b2e96",
+        "namespace": "hw5",
+        "resourceVersion": "1057",
+        "uid": "0d5d0b05-51fd-4e0d-aa0d-afbb0dfb9b24"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 4,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:58:10Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1054",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:58:24Z",
+      "message": "Container image \"skill-pairs:hw5\" is not present with pull policy of Never",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:58:10Z",
+        "name": "memory-profile-ch6zj.18ec090a115dd172",
+        "namespace": "hw5",
+        "resourceVersion": "1102",
+        "uid": "2f9711f8-b425-4bc4-af34-621f91610a44"
+      },
+      "reason": "ErrImageNeverPull",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Warning"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 4,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:58:10Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1054",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:58:24Z",
+      "message": "Error: ErrImageNeverPull",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:58:10Z",
+        "name": "memory-profile-ch6zj.18ec090a115e7840",
+        "namespace": "hw5",
+        "resourceVersion": "1103",
+        "uid": "c087bef1-37f6-4863-bc6b-ae066fe0ea48"
+      },
+      "reason": "Failed",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Warning"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:58:39Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1054",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:58:39Z",
+      "message": "Container image \"skill-pairs:hw5\" already present on machine",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:58:39Z",
+        "name": "memory-profile-ch6zj.18ec0910dc2e0802",
+        "namespace": "hw5",
+        "resourceVersion": "1128",
+        "uid": "f81ad5e8-044d-4270-87a1-3882d1447b07"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:58:44Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1054",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:58:44Z",
+      "message": "Created container: calculation",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:58:44Z",
+        "name": "memory-profile-ch6zj.18ec09122501d8f0",
+        "namespace": "hw5",
+        "resourceVersion": "1135",
+        "uid": "f6be8bae-ad91-4887-8dc8-c5554993764f"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:58:45Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{calculation}",
+        "kind": "Pod",
+        "name": "memory-profile-ch6zj",
+        "namespace": "hw5",
+        "resourceVersion": "1054",
+        "uid": "02e4b0ff-ba90-4c25-be62-ff037489aca9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:58:45Z",
+      "message": "Started container calculation",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:58:45Z",
+        "name": "memory-profile-ch6zj.18ec0912584be3a9",
+        "namespace": "hw5",
+        "resourceVersion": "1136",
+        "uid": "13034f87-9c87-42c3-b8bd-013044401ac7"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:57:53Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "memory-profile",
+        "namespace": "hw5",
+        "resourceVersion": "1050",
+        "uid": "e92fb2f9-7615-4e4e-9980-413894eb0d82"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:57:53Z",
+      "message": "Created pod: memory-profile-ch6zj",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:57:53Z",
+        "name": "memory-profile.18ec09061e774624",
+        "namespace": "hw5",
+        "resourceVersion": "1052",
+        "uid": "79d1ba97-8c02-4c78-8f59-d39008978478"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T22:59:10Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "memory-profile",
+        "namespace": "hw5",
+        "resourceVersion": "1176",
+        "uid": "e92fb2f9-7615-4e4e-9980-413894eb0d82"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T22:59:10Z",
+      "message": "Job completed",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T22:59:10Z",
+        "name": "memory-profile.18ec0917fd36beb5",
+        "namespace": "hw5",
+        "resourceVersion": "1182",
+        "uid": "690b1462-e44d-4c99-8ca5-e17a173260d2"
+      },
+      "reason": "Completed",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

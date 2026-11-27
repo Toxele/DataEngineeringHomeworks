@@ -1,0 +1,62 @@
+Name:             quota-first
+Namespace:        hw5-quota
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:03:58 +0300
+Labels:           <none>
+Annotations:      <none>
+Status:           Running
+IP:               10.1.0.18
+IPs:
+  IP:  10.1.0.18
+Containers:
+  task:
+    Container ID:  docker://d7ff4788332b75839d1d9d84e150673e94975790ee56ea65952a480a31311ccd
+    Image:         skill-pairs:hw5
+    Image ID:      docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      import time
+      time.sleep(600)
+    State:          Running
+      Started:      Sat, 28 Nov 2026 02:04:04 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     750m
+      memory:  64Mi
+    Requests:
+      cpu:        750m
+      memory:     32Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6mxck (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True
+  Initialized                 True
+  Ready                       True
+  ContainersReady             True
+  PodScheduled                True
+Volumes:
+  kube-api-access-6mxck:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  9s    default-scheduler  Successfully assigned hw5-quota/quota-first to docker-desktop
+  Normal  Pulled     5s    kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    3s    kubelet            Created container: task
+  Normal  Started    3s    kubelet            Started container task

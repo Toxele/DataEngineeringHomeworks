@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: memory-tuned
+  namespace: hw5
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 240
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: calculation
+        image: skill-pairs:hw5
+        imagePullPolicy: Never
+        envFrom:
+        - secretRef:
+            name: s3-credentials
+        env:
+        - name: S3_ENDPOINT
+          value: http://host.docker.internal:9000
+        - name: S3_BUCKET
+          value: hh-lake
+        - name: MODE
+          value: full
+        - name: OUTPUT_PREFIX
+          value: hw5/20261127T225750/memory-tuned
+        - name: PARTS
+          value: '3'
+        resources:
+          requests:
+            cpu: 500m
+            memory: 80Mi
+          limits:
+            cpu: '1'
+            memory: 80Mi

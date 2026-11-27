@@ -36,3 +36,12 @@ __pycache__/
 /hw-4/report/*.log
 /hw-4/report/*.out
 /hw-4/report/build-*.txt
+/hw-5/.env
+/hw-5/artifacts/
+/hw-5/explanation.md
+/hw-5/report/*.tex
+/hw-5/report/*.pdf
+/hw-5/report/*.aux
+/hw-5/report/*.log
+/hw-5/report/*.out
+/hw-5/report/build-*.txt

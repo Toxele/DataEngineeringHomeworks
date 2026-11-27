@@ -1,0 +1,3 @@
+NAME       MODE         PARALLEL   SUCCEEDED
+parallel   Indexed      3          3
+reduce     NonIndexed   1          1

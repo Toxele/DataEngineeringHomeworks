@@ -1,0 +1,43 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parallel
+  namespace: hw5
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 240
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: calculation
+        image: skill-pairs:hw5
+        imagePullPolicy: Never
+        envFrom:
+        - secretRef:
+            name: s3-credentials
+        env:
+        - name: S3_ENDPOINT
+          value: http://s3:9000
+        - name: S3_BUCKET
+          value: hh-lake
+        - name: MODE
+          value: part
+        - name: OUTPUT_PREFIX
+          value: hw5/20261127T225711/parallel
+        - name: PARTS
+          value: '3'
+        - name: JOB_COMPLETION_INDEX
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.annotations['batch.kubernetes.io/job-completion-index']
+        resources:
+          requests:
+            cpu: 500m
+            memory: 80Mi
+          limits:
+            cpu: '1'
+            memory: 80Mi
+  completions: 3
+  parallelism: 3
+  completionMode: Indexed
