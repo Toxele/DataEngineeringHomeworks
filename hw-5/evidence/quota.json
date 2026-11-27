@@ -1,0 +1,39 @@
+{
+  "apiVersion": "v1",
+  "kind": "ResourceQuota",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"ResourceQuota\",\"metadata\":{\"annotations\":{},\"name\":\"compute\",\"namespace\":\"hw5-quota\"},\"spec\":{\"hard\":{\"limits.cpu\":\"1\",\"limits.memory\":\"256Mi\",\"pods\":\"2\",\"requests.cpu\":\"1\",\"requests.memory\":\"128Mi\"}}}\n"
+    },
+    "creationTimestamp": "2026-11-27T23:03:57Z",
+    "name": "compute",
+    "namespace": "hw5-quota",
+    "resourceVersion": "1798",
+    "uid": "305044aa-79d9-4b3c-a2df-42bafc95fd3c"
+  },
+  "spec": {
+    "hard": {
+      "limits.cpu": "1",
+      "limits.memory": "256Mi",
+      "pods": "2",
+      "requests.cpu": "1",
+      "requests.memory": "128Mi"
+    }
+  },
+  "status": {
+    "hard": {
+      "limits.cpu": "1",
+      "limits.memory": "256Mi",
+      "pods": "2",
+      "requests.cpu": "1",
+      "requests.memory": "128Mi"
+    },
+    "used": {
+      "limits.cpu": "750m",
+      "limits.memory": "64Mi",
+      "pods": "1",
+      "requests.cpu": "750m",
+      "requests.memory": "32Mi"
+    }
+  }
+}

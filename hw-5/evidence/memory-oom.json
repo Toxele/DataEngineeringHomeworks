@@ -1,0 +1,106 @@
+[
+  {
+    "pod": "memory-oom-gq28n",
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T22:59:31Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T22:59:14Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T22:59:14Z",
+          "observedGeneration": 1,
+          "reason": "PodFailed",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T22:59:14Z",
+          "observedGeneration": 1,
+          "reason": "PodFailed",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T22:59:14Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "32Mi"
+          },
+          "containerID": "docker://70b0ec37fd5df82e9086ca15f8fab9190d488a3001e70976cdc777a7a07d81d8",
+          "image": "skill-pairs:hw5",
+          "imageID": "docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b",
+          "lastState": {},
+          "name": "calculation",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "32Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "32Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "docker://70b0ec37fd5df82e9086ca15f8fab9190d488a3001e70976cdc777a7a07d81d8",
+              "exitCode": 137,
+              "finishedAt": "2026-11-27T22:59:26Z",
+              "reason": "OOMKilled",
+              "startedAt": "2026-11-27T22:59:25Z"
+            }
+          },
+          "volumeMounts": [
+            {
+              "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+              "name": "kube-api-access-9xmw7",
+              "readOnly": true,
+              "recursiveReadOnly": "Disabled"
+            }
+          ]
+        }
+      ],
+      "hostIP": "192.168.65.3",
+      "hostIPs": [
+        {
+          "ip": "192.168.65.3"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Failed",
+      "podIP": "10.1.0.7",
+      "podIPs": [
+        {
+          "ip": "10.1.0.7"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-27T22:59:14Z"
+    },
+    "result": null
+  }
+]

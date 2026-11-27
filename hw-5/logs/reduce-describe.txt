@@ -1,0 +1,652 @@
+Name:             cpu-waiting
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:02:22 +0300
+Labels:           <none>
+Annotations:      <none>
+Status:           Pending
+IP:
+IPs:              <none>
+Containers:
+  task:
+    Container ID:
+    Image:         skill-pairs:hw5
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      import time
+      time.sleep(600)
+    State:          Waiting
+      Reason:       ContainerCreating
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     7
+      memory:  64Mi
+    Requests:
+      cpu:        7
+      memory:     32Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2ksmp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-2ksmp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  20s   default-scheduler  0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+  Normal   Scheduled         9s    default-scheduler  Successfully assigned hw5/cpu-waiting to docker-desktop
+  Normal   Pulled            1s    kubelet            Container image "skill-pairs:hw5" already present on machine
+
+
+Name:             memory-oom-gq28n
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 01:59:14 +0300
+Labels:           batch.kubernetes.io/controller-uid=77e0bf3e-1443-4bf5-afe4-bcb61018633d
+                  batch.kubernetes.io/job-name=memory-oom
+                  controller-uid=77e0bf3e-1443-4bf5-afe4-bcb61018633d
+                  job-name=memory-oom
+Annotations:      <none>
+Status:           Failed
+IP:               10.1.0.7
+IPs:
+  IP:           10.1.0.7
+Controlled By:  Job/memory-oom
+Containers:
+  calculation:
+    Container ID:   docker://70b0ec37fd5df82e9086ca15f8fab9190d488a3001e70976cdc777a7a07d81d8
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Sat, 28 Nov 2026 01:59:25 +0300
+      Finished:     Sat, 28 Nov 2026 01:59:26 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  32Mi
+    Requests:
+      cpu:     500m
+      memory:  32Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:    http://host.docker.internal:9000
+      S3_BUCKET:      hh-lake
+      MODE:           full
+      OUTPUT_PREFIX:  hw5/20261127T225750/memory-oom
+      PARTS:          3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9xmw7 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-9xmw7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  3m17s  default-scheduler  Successfully assigned hw5/memory-oom-gq28n to docker-desktop
+  Normal  Pulled     3m9s   kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    3m6s   kubelet            Created container: calculation
+  Normal  Started    3m5s   kubelet            Started container calculation
+
+
+Name:             memory-profile-ch6zj
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 01:57:53 +0300
+Labels:           batch.kubernetes.io/controller-uid=e92fb2f9-7615-4e4e-9980-413894eb0d82
+                  batch.kubernetes.io/job-name=memory-profile
+                  controller-uid=e92fb2f9-7615-4e4e-9980-413894eb0d82
+                  job-name=memory-profile
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.1.0.6
+IPs:
+  IP:           10.1.0.6
+Controlled By:  Job/memory-profile
+Containers:
+  calculation:
+    Container ID:   docker://ce97b53e2c36acc32bff955b9f21f3650596a6736bf8542fa666fcfd48257dbe
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 01:58:45 +0300
+      Finished:     Sat, 28 Nov 2026 01:58:59 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  512Mi
+    Requests:
+      cpu:     500m
+      memory:  128Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:    http://host.docker.internal:9000
+      S3_BUCKET:      hh-lake
+      MODE:           full
+      OUTPUT_PREFIX:  hw5/20261127T225750/memory-profile
+      PARTS:          3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bglrj (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-bglrj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason             Age                   From               Message
+  ----     ------             ----                  ----               -------
+  Normal   Scheduled          4m38s                 default-scheduler  Successfully assigned hw5/memory-profile-ch6zj to docker-desktop
+  Warning  ErrImageNeverPull  4m7s (x4 over 4m21s)  kubelet            Container image "skill-pairs:hw5" is not present with pull policy of Never
+  Warning  Failed             4m7s (x4 over 4m21s)  kubelet            Error: ErrImageNeverPull
+  Normal   Pulled             3m52s                 kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal   Created            3m47s                 kubelet            Created container: calculation
+  Normal   Started            3m46s                 kubelet            Started container calculation
+
+
+Name:             memory-tuned-ztnlz
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 01:59:36 +0300
+Labels:           batch.kubernetes.io/controller-uid=f6349291-9e5b-4df8-ad4e-281768c48145
+                  batch.kubernetes.io/job-name=memory-tuned
+                  controller-uid=f6349291-9e5b-4df8-ad4e-281768c48145
+                  job-name=memory-tuned
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.1.0.8
+IPs:
+  IP:           10.1.0.8
+Controlled By:  Job/memory-tuned
+Containers:
+  calculation:
+    Container ID:   docker://5f531d02cd5ff9450db0071d1bc067d56c3486a88028b00386ea1231fb9457de
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 01:59:42 +0300
+      Finished:     Sat, 28 Nov 2026 01:59:49 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  80Mi
+    Requests:
+      cpu:     500m
+      memory:  80Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:    http://host.docker.internal:9000
+      S3_BUCKET:      hh-lake
+      MODE:           full
+      OUTPUT_PREFIX:  hw5/20261127T225750/memory-tuned
+      PARTS:          3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-k9g4z (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-k9g4z:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  2m55s  default-scheduler  Successfully assigned hw5/memory-tuned-ztnlz to docker-desktop
+  Normal  Pulled     2m51s  kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    2m49s  kubelet            Created container: calculation
+  Normal  Started    2m49s  kubelet            Started container calculation
+
+
+Name:             parallel-0-mtk8q
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:01:23 +0300
+Labels:           batch.kubernetes.io/controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  batch.kubernetes.io/job-completion-index=0
+                  batch.kubernetes.io/job-name=parallel
+                  controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  job-name=parallel
+Annotations:      batch.kubernetes.io/job-completion-index: 0
+Status:           Succeeded
+IP:               10.1.0.10
+IPs:
+  IP:           10.1.0.10
+Controlled By:  Job/parallel
+Containers:
+  calculation:
+    Container ID:   docker://d05d5096bd0e65f964703eb34c51aadae76829be443a026c583bb99c1863cf10
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 02:01:39 +0300
+      Finished:     Sat, 28 Nov 2026 02:01:45 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  80Mi
+    Requests:
+      cpu:     500m
+      memory:  80Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:           http://s3:9000
+      S3_BUCKET:             hh-lake
+      MODE:                  part
+      OUTPUT_PREFIX:         hw5/20261127T225711/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.annotations['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-52dzv (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-52dzv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  68s   default-scheduler  Successfully assigned hw5/parallel-0-mtk8q to docker-desktop
+  Normal  Pulled     60s   kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    53s   kubelet            Created container: calculation
+  Normal  Started    50s   kubelet            Started container calculation
+
+
+Name:             parallel-1-4r99f
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:01:24 +0300
+Labels:           batch.kubernetes.io/controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  batch.kubernetes.io/job-completion-index=1
+                  batch.kubernetes.io/job-name=parallel
+                  controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  job-name=parallel
+Annotations:      batch.kubernetes.io/job-completion-index: 1
+Status:           Succeeded
+IP:               10.1.0.11
+IPs:
+  IP:           10.1.0.11
+Controlled By:  Job/parallel
+Containers:
+  calculation:
+    Container ID:   docker://41ae4a4f2908a0a5438b7fc3a629b2399e05b229ec608b87abb50ed7d48d17bc
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 02:01:41 +0300
+      Finished:     Sat, 28 Nov 2026 02:01:47 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  80Mi
+    Requests:
+      cpu:     500m
+      memory:  80Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:           http://s3:9000
+      S3_BUCKET:             hh-lake
+      MODE:                  part
+      OUTPUT_PREFIX:         hw5/20261127T225711/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.annotations['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6t7gk (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-6t7gk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  67s   default-scheduler  Successfully assigned hw5/parallel-1-4r99f to docker-desktop
+  Normal  Pulled     58s   kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    52s   kubelet            Created container: calculation
+  Normal  Started    49s   kubelet            Started container calculation
+
+
+Name:             parallel-2-qk98b
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:01:24 +0300
+Labels:           batch.kubernetes.io/controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  batch.kubernetes.io/job-completion-index=2
+                  batch.kubernetes.io/job-name=parallel
+                  controller-uid=93a8e34b-7fac-4708-b735-2cad36fb55a0
+                  job-name=parallel
+Annotations:      batch.kubernetes.io/job-completion-index: 2
+Status:           Succeeded
+IP:               10.1.0.12
+IPs:
+  IP:           10.1.0.12
+Controlled By:  Job/parallel
+Containers:
+  calculation:
+    Container ID:   docker://bef0d6aec90c2675b49c36b9f1d6ad7bc43a0fcaab578dd3e017d9053dede9fd
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 02:01:43 +0300
+      Finished:     Sat, 28 Nov 2026 02:01:47 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  80Mi
+    Requests:
+      cpu:     500m
+      memory:  80Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:           http://s3:9000
+      S3_BUCKET:             hh-lake
+      MODE:                  part
+      OUTPUT_PREFIX:         hw5/20261127T225711/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.annotations['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-sfjkx (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-sfjkx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  67s   default-scheduler  Successfully assigned hw5/parallel-2-qk98b to docker-desktop
+  Normal  Pulled     57s   kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    49s   kubelet            Created container: calculation
+  Normal  Started    47s   kubelet            Started container calculation
+
+
+Name:             reduce-v8xv7
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 02:02:01 +0300
+Labels:           batch.kubernetes.io/controller-uid=e4e12692-b376-42a0-b7ef-e1cb1b8f2c88
+                  batch.kubernetes.io/job-name=reduce
+                  controller-uid=e4e12692-b376-42a0-b7ef-e1cb1b8f2c88
+                  job-name=reduce
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.1.0.14
+IPs:
+  IP:           10.1.0.14
+Controlled By:  Job/reduce
+Containers:
+  calculation:
+    Container ID:   docker://ee414cc0ae372bdbf48d1ca85028d0a80c30da8c2e2768bb7d42a2db3c68a757
+    Image:          skill-pairs:hw5
+    Image ID:       docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 28 Nov 2026 02:02:11 +0300
+      Finished:     Sat, 28 Nov 2026 02:02:18 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  80Mi
+    Requests:
+      cpu:     500m
+      memory:  80Mi
+    Environment Variables from:
+      s3-credentials  Secret  Optional: false
+    Environment:
+      S3_ENDPOINT:    http://s3:9000
+      S3_BUCKET:      hh-lake
+      MODE:           reduce
+      OUTPUT_PREFIX:  hw5/20261127T225711/parallel
+      PARTS:          3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s2rsx (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-s2rsx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  30s   default-scheduler  Successfully assigned hw5/reduce-v8xv7 to docker-desktop
+  Normal  Pulled     22s   kubelet            Container image "skill-pairs:hw5" already present on machine
+  Normal  Created    20s   kubelet            Created container: calculation
+  Normal  Started    18s   kubelet            Started container calculation
+
+
+Name:             s3-75f4b4bb4c-tbz8v
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Sat, 28 Nov 2026 01:59:57 +0300
+Labels:           app=hw5-s3
+                  pod-template-hash=75f4b4bb4c
+Annotations:      <none>
+Status:           Running
+IP:               10.1.0.9
+IPs:
+  IP:           10.1.0.9
+Controlled By:  ReplicaSet/s3-75f4b4bb4c
+Containers:
+  s3:
+    Container ID:   docker://263e5bbaf04ec9169f9e1a7a71d1d55b376fc01dee174a0cc09cbeeb75635595
+    Image:          rustfs/rustfs@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c
+    Image ID:       docker-pullable://rustfs/rustfs@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c
+    Port:           9000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 28 Nov 2026 02:00:09 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      250m
+      memory:   256Mi
+    Readiness:  tcp-socket :9000 delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      RUSTFS_ACCESS_KEY:      <set to the key 'AWS_ACCESS_KEY_ID' in secret 's3-credentials'>      Optional: false
+      RUSTFS_SECRET_KEY:      <set to the key 'AWS_SECRET_ACCESS_KEY' in secret 's3-credentials'>  Optional: false
+      RUSTFS_VOLUMES:         /data
+      RUSTFS_ADDRESS:         :9000
+      RUSTFS_CONSOLE_ENABLE:  false
+    Mounts:
+      /data from data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-r28s8 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True
+  Initialized                 True
+  Ready                       True
+  ContainersReady             True
+  PodScheduled                True
+Volumes:
+  data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  s3-data
+    ReadOnly:   false
+  kube-api-access-r28s8:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                    From               Message
+  ----     ------            ----                   ----               -------
+  Warning  FailedScheduling  2m35s (x3 over 2m37s)  default-scheduler  0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. not found
+  Normal   Scheduled         2m34s                  default-scheduler  Successfully assigned hw5/s3-75f4b4bb4c-tbz8v to docker-desktop
+  Normal   Pulled            2m25s                  kubelet            Container image "rustfs/rustfs@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c" already present on machine
+  Normal   Created           2m22s                  kubelet            Created container: s3
+  Normal   Started           2m21s                  kubelet            Started container s3

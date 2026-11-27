@@ -1,0 +1,8 @@
+test_split_and_merge_preserve_every_frequency (test_processing.PairCalculationTests.test_split_and_merge_preserve_every_frequency) ... ok
+test_top_orders_equal_counts_by_skill_names (test_processing.PairCalculationTests.test_top_orders_equal_counts_by_skill_names) ... ok
+test_variant_filter_and_unique_skills (test_processing.PairCalculationTests.test_variant_filter_and_unique_skills) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

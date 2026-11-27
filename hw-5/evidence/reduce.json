@@ -1,0 +1,194 @@
+[
+  {
+    "pod": "reduce-v8xv7",
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T23:02:24Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T23:02:01Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T23:02:20Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T23:02:20Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-27T23:02:01Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "80Mi"
+          },
+          "containerID": "docker://ee414cc0ae372bdbf48d1ca85028d0a80c30da8c2e2768bb7d42a2db3c68a757",
+          "image": "skill-pairs:hw5",
+          "imageID": "docker-pullable://skill-pairs@sha256:a82f0299a09e22777f1bf20f8fafe5b4b8a0a9f8841dfe0f558dc07056fbe20b",
+          "lastState": {},
+          "name": "calculation",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "80Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "80Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "docker://ee414cc0ae372bdbf48d1ca85028d0a80c30da8c2e2768bb7d42a2db3c68a757",
+              "exitCode": 0,
+              "finishedAt": "2026-11-27T23:02:18Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-27T23:02:11Z"
+            }
+          },
+          "volumeMounts": [
+            {
+              "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+              "name": "kube-api-access-s2rsx",
+              "readOnly": true,
+              "recursiveReadOnly": "Disabled"
+            }
+          ]
+        }
+      ],
+      "hostIP": "192.168.65.3",
+      "hostIPs": [
+        {
+          "ip": "192.168.65.3"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.1.0.14",
+      "podIPs": [
+        {
+          "ip": "10.1.0.14"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-27T23:02:01Z"
+    },
+    "result": {
+      "event": "completed",
+      "mode": "reduce",
+      "index": 0,
+      "rows": 0,
+      "selected": 0,
+      "keys": 30809,
+      "occurrences": 231685,
+      "sha256": "0011631b9a441252afb2959a44d32270867ae924b493c2d3ca212de3b9fb9941",
+      "seconds": 1.784,
+      "memory": {
+        "rss_peak_bytes": 70295552,
+        "cgroup_peak_bytes": 60801024,
+        "cgroup_limit_bytes": 83886080
+      },
+      "top10": [
+        {
+          "skills": [
+            "1с программирование",
+            "1с: предприятие 8"
+          ],
+          "frequency": 4010
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "1с: бухгалтерия"
+          ],
+          "frequency": 2852
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "1с: управление торговлей"
+          ],
+          "frequency": 2266
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "обновление конфигурации 1с"
+          ],
+          "frequency": 2183
+        },
+        {
+          "skills": [
+            "1с: бухгалтерия",
+            "1с: предприятие 8"
+          ],
+          "frequency": 1908
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "erp-системы на базе 1с"
+          ],
+          "frequency": 1866
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "1с: документооборот"
+          ],
+          "frequency": 1663
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "1с: зарплата и управление персоналом"
+          ],
+          "frequency": 1611
+        },
+        {
+          "skills": [
+            "1с: предприятие 8",
+            "1с: управление торговлей"
+          ],
+          "frequency": 1492
+        },
+        {
+          "skills": [
+            "1с программирование",
+            "создание конфигурации 1с"
+          ],
+          "frequency": 1440
+        }
+      ]
+    }
+  }
+]

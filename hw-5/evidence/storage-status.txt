@@ -1,0 +1,8 @@
+NAME                 READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                                                                                  SELECTOR
+deployment.apps/s3   1/1     1            1           6m33s   s3           rustfs/rustfs@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c   app=hw5-s3
+
+NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE     SELECTOR
+service/s3   ClusterIP   10.110.1.185   <none>        9000/TCP   6m32s   app=hw5-s3
+
+NAME                            STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE     VOLUMEMODE
+persistentvolumeclaim/s3-data   Bound    pvc-3281c93c-888d-48da-8e14-d56ebb78afc7   2Gi        RWO            hostpath       <unset>                 6m33s   Filesystem

@@ -1,0 +1,139 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T23:03:58Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "quota-first",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1799",
+        "uid": "29c4f5b9-019a-43ee-8e74-8c98c8ee0dfc"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T23:03:58Z",
+      "message": "Successfully assigned hw5-quota/quota-first to docker-desktop",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T23:03:58Z",
+        "name": "quota-first.18ec095b147aab93",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1801",
+        "uid": "91f05ea1-bc84-4ea3-aadd-82fb5db4df9f"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T23:04:02Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1800",
+        "uid": "29c4f5b9-019a-43ee-8e74-8c98c8ee0dfc"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T23:04:02Z",
+      "message": "Container image \"skill-pairs:hw5\" already present on machine",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T23:04:02Z",
+        "name": "quota-first.18ec095c19114b4d",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1810",
+        "uid": "3417ada3-b5dc-47ba-9792-cba4f2498b80"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T23:04:04Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1800",
+        "uid": "29c4f5b9-019a-43ee-8e74-8c98c8ee0dfc"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T23:04:04Z",
+      "message": "Created container: task",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T23:04:04Z",
+        "name": "quota-first.18ec095c713d71c0",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1812",
+        "uid": "c12178c0-1749-4ff5-942a-40e7aefbb18c"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-27T23:04:04Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1800",
+        "uid": "29c4f5b9-019a-43ee-8e74-8c98c8ee0dfc"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-27T23:04:04Z",
+      "message": "Started container task",
+      "metadata": {
+        "creationTimestamp": "2026-11-27T23:04:04Z",
+        "name": "quota-first.18ec095c97e518e4",
+        "namespace": "hw5-quota",
+        "resourceVersion": "1815",
+        "uid": "83d17fd1-30ce-4b7d-85cc-31f6c45f6ea6"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "docker-desktop",
+      "source": {
+        "component": "kubelet",
+        "host": "docker-desktop"
+      },
+      "type": "Normal"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

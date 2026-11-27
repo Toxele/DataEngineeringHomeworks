@@ -1,0 +1,9 @@
+**
+!hw-5/
+!hw-5/requirements.txt
+!hw-5/batch/
+!hw-5/batch/*.py
+!hw-3/
+!hw-3/lab/
+!hw-3/lab/__init__.py
+!hw-3/lab/domain.py

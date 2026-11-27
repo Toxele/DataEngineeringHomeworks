@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quota-second
+  namespace: hw5-quota
+spec:
+  restartPolicy: Never
+  terminationGracePeriodSeconds: 1
+  containers:
+  - name: task
+    image: skill-pairs:hw5
+    imagePullPolicy: Never
+    command:
+    - python
+    - -c
+    - 'import time
+
+      time.sleep(600)'
+    resources:
+      requests:
+        cpu: 750m
+        memory: 32Mi
+      limits:
+        cpu: 750m
+        memory: 64Mi

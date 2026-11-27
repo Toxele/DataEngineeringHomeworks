@@ -1,0 +1,81 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: s3-data
+  namespace: hw5
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s3
+  namespace: hw5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hw5-s3
+  template:
+    metadata:
+      labels:
+        app: hw5-s3
+    spec:
+      securityContext:
+        fsGroup: 10001
+      containers:
+      - name: s3
+        image: rustfs/rustfs@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c
+        env:
+        - name: RUSTFS_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: AWS_ACCESS_KEY_ID
+        - name: RUSTFS_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: AWS_SECRET_ACCESS_KEY
+        - name: RUSTFS_VOLUMES
+          value: /data
+        - name: RUSTFS_ADDRESS
+          value: :9000
+        - name: RUSTFS_CONSOLE_ENABLE
+          value: 'false'
+        ports:
+        - containerPort: 9000
+        readinessProbe:
+          tcpSocket:
+            port: 9000
+          initialDelaySeconds: 5
+        resources:
+          requests:
+            cpu: 250m
+            memory: 256Mi
+          limits:
+            cpu: '2'
+            memory: 1Gi
+        volumeMounts:
+        - name: data
+          mountPath: /data
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: s3-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: s3
+  namespace: hw5
+spec:
+  selector:
+    app: hw5-s3
+  ports:
+  - port: 9000
+    targetPort: 9000

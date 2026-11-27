@@ -1,0 +1,6 @@
+Forwarding from 127.0.0.1:19000 -> 9000
+Forwarding from [::1]:19000 -> 9000
+Handling connection for 19000
+Forwarding from 127.0.0.1:19000 -> 9000
+Forwarding from [::1]:19000 -> 9000
+Handling connection for 19000
